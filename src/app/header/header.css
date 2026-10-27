@@ -1,0 +1,95 @@
+
+:host {
+  display: block;
+}
+
+.header {
+  margin: 22px 24px 0;
+  padding: 22px 28px;
+  min-height: 120px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e0e7ff;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(72, 82, 150, 0.08);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 16px;
+  font-size: 30px;
+  font-weight: 800;
+  box-shadow: 0 5px 12px #6366f133;
+}
+
+.brand h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  color: #202b46;
+}
+
+.brand p {
+  margin: 0;
+  color: #7a8499;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #475569;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #6d5bd0;
+}
+
+.contact {
+  padding: 15px 22px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border-radius: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 5px 12px #6366f133;
+}
+
+@media (max-width: 600px) {
+  .header {
+    margin: 12px;
+    padding: 18px;
+  }
+
+  nav {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}
